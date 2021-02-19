@@ -1680,13 +1680,13 @@ var surveyJSON = {
 		}
 	    ]
         },
-        {
-          "type": "text",
-          "name": "date",
-          "title": "Date of the Data",
-          "inputType": "date",
-          "min": "2020-12-01"
-        },
+//         {
+//           "type": "text",
+//           "name": "date",
+//           "title": "Date of the Data",
+//           "inputType": "date",
+//           "min": "2020-12-01"
+//         },
         {
           "type": "matrixdynamic",
           "name": "question2",
@@ -1827,19 +1827,19 @@ function sendDataToServer(survey) {
 					
 					for (i = 0; i < data.question2.length; i++) {
 					var q = data.question2[i];
-                    $.post( "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdR7aTfCEfNefriSXpmKD6ccLT6QEVbGXtnGVoAWiig7w6MSA/formResponse",
+                    $.post( "https://docs.google.com/forms/u/2/d/e/1FAIpQLSfdYXRImhZgN14Jc8GPpzF_ccTQEdarsf_hTl4f5mX0dnfybA/formResponse",
                     {
-                    			"entry.2081806952": data.date,
-					"entry.1997249446": data.peeoName,
-					"entry.1341436243": data.schoolName,
-					"entry.1365237637": q["Child Age Group"],
-					"entry.993949122": q["Date Of Child Right Club Gathan"],
-					"entry.791177180": q["Total Boys in Club"],
-					"entry.510921074": q["Total Girls in Club"],
-					"entry.2111580312": q["Name of Club In Charge"],
-					"entry.1681330709": q["Mobile No of In Charge"],
-					"entry.79184850": q["Meetings be Conducted Regularly Yes/No"],
-					"entry.51442607": q["Date of Last Meeting Conducted"]
+//                     			"entry.2081806952": data.date,
+					"entry.1793765460": data.peeoName,
+					"entry.2070308753": data.schoolName,
+					"entry.1884067501": q["Child Age Group"],
+					"entry.1305570573": q["Date Of Child Right Club Gathan"],
+					"entry.303816468": q["Total Boys in Club"],
+					"entry.1208961642": q["Total Girls in Club"],
+					"entry.197286050": q["Name of Club In Charge"],
+					"entry.1346758606": q["Mobile No of In Charge"],
+					"entry.1801290748": q["Meetings be Conducted Regularly Yes/No"],
+					"entry.84219093": q["Date of Last Meeting Conducted"]
                     }
                     );
 					}
